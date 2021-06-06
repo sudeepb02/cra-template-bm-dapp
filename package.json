@@ -1,21 +1,40 @@
 {
   "name": "cra-template-bm-dapp",
+  "description": "A quick start, bare-minimum dapp for your decentralized application",
   "version": "0.1.0",
-  "private": true,
+  "author": "Sudeep Biswas <sudeepbiswas02@gmail.com",
+  "keywords": [
+    "ethereum",
+    "dapp",
+    "web3",
+    "ethers",
+    "web3 frontend",
+    "bare minimum dapp"
+  ],
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "ethers": "^5.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "web3modal": "^1.9.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {
     "extends": [
