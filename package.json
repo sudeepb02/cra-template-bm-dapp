@@ -1,7 +1,7 @@
 {
   "name": "cra-template-bm-dapp",
   "description": "A quick start, bare-minimum dapp for your decentralized application",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Sudeep Biswas <sudeepbiswas02@gmail.com",
   "keywords": [
     "ethereum",
