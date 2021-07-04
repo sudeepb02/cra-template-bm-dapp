@@ -1,7 +1,7 @@
 {
   "name": "cra-template-bm-dapp",
   "description": "A quick start, bare-minimum dapp for your decentralized application",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": "Sudeep Biswas <sudeepbiswas02@gmail.com",
   "keywords": [
     "ethereum",
@@ -16,6 +16,12 @@
     "template",
     "template.json"
   ],
+  "homepage": "https://github.com/sudeepb02/cra-template-bm-dapp#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudeepb02/cra-template-bm-dapp"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

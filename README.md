@@ -4,8 +4,8 @@ A bare minimum dapp front-end for your decentralized web3 application. Create a 
 
 - Simple, easy and fast
 - Ready to use dapp with web3 login feature
-- Includes only the bare minimum dependencies so your app is not bloated
-- Uses [Web3modal](https://github.com/Web3Modal/web3modal) under the hood so you can add other providers easily with minimum efforts
+- Includes only the bare minimum dependencies, so your app is not bloated
+- Uses [Web3modal](https://github.com/Web3Modal/web3modal) under the hood, so you can add other providers easily with minimum efforts
 - Reloads automatically on account and network changes
 
 ## How to use
@@ -17,7 +17,7 @@ npx create-react-app my-app --template bm-dapp
 yarn start
 ```
 
-The app runs in development mode at [http://localhost:3000](http://localhost:3000). Clicking the `Connect Web3` button will pop-up Metamask by default(if web3 is enabled). For adding other providers, check [Web3Modal Provider Options](https://github.com/Web3Modal/web3modal#provider-options) 
+The app runs in development mode at [http://localhost:3000](http://localhost:3000). Clicking the `Connect Web3` button will pop up Metamask by default(if web3 is enabled). For adding other providers, check [Web3Modal Provider Options](https://github.com/Web3Modal/web3modal#provider-options) 
 
 
 ### Using with ethers
@@ -42,7 +42,7 @@ const signer = await provider.getSigner();
 daiContract.connect(signer);
 ```
 
-Or to intialize a Contract with signer
+Or to initialize a Contract with signer
 ```
 const daiWithSigner = new ethers.Contract(daiAddress, daiAbi, provider.getSigner());
 ```
@@ -60,7 +60,7 @@ import { Web3Context } from './web3';
 const { account, provider } = useContext(Web3Context);
 const web3 = new Web3(provider);
 ```
-For more details, please refer [`web3js` documentation](https://web3js.readthedocs.io/en/v1.3.4/index.html
+For more details, please refer [`web3js` documentation](https://web3js.readthedocs.io/en/v1.3.4/index.html)
 
 
 ## Related efforts
